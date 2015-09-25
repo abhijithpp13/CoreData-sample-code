@@ -116,8 +116,6 @@ static  NSString *detailVcSegueId =@"movieDetailSegue";
                                           if (!jsonDict) {
                                               NSLog(@"Error parsing JSON: %@", e);
                                           } else {
-                                              NSLog(@"Item: %@", jsonDict);
-
                                               if ([[jsonDict objectForKey:@"Response"] isEqualToString:@"True"])
                                               {
                                                   self.movie=[self createMovieModelDict:jsonDict];
